@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Create User</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Create a New User</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/get.html">View Users</a></li>
+        <li><a href="/update.html">Update User</a></li>
+        <li><a href="/delete.html">Delete User</a></li>
+        <li><a href="/cookies.html">Manage Cookies</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="create-user">
+        <form id="createUserForm">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Enter full name" required />
+
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter email address"
+            required
+          />
+
+          <label for="age">Age</label>
+          <input type="number" id="age" placeholder="Enter age" required />
+
+          <button type="submit">Create User</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="create.js"></script>
+  </body>
+</html>

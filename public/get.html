@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>View Users</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>All Users</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/create.html">Create User</a></li>
+        <li><a href="/update.html">Update User</a></li>
+        <li><a href="/delete.html">Delete User</a></li>
+        <li><a href="/cookies.html">Manage Cookies</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="users-list">
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Age</th>
+            </tr>
+          </thead>
+          <tbody id="usersTableBody">
+            <!-- Users will be populated here -->
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <script src="get.js"></script>
+  </body>
+</html>

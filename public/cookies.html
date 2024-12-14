@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cookie Management</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Cookie Management</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/create.html">Create User</a></li>
+        <li><a href="/get.html">View Users</a></li>
+        <li><a href="/update.html">Update User</a></li>
+        <li><a href="/delete.html">Delete User</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <!-- Set Cookie Section -->
+      <section id="set-cookie">
+        <h2>Set a Cookie</h2>
+        <form id="setCookieForm">
+          <label for="cookieName">Cookie Name</label>
+          <input
+            type="text"
+            id="cookieName"
+            placeholder="Enter cookie name"
+            required
+          />
+
+          <label for="cookieValue">Cookie Value</label>
+          <input
+            type="text"
+            id="cookieValue"
+            placeholder="Enter cookie value"
+            required
+          />
+
+          <label for="cookieMaxAge">Max Age (in seconds)</label>
+          <input type="number" id="cookieMaxAge" placeholder="Optional" />
+
+          <label>
+            <input type="checkbox" id="cookieHttpOnly" />
+            HTTP Only
+          </label>
+
+          <button type="submit">Set Cookie</button>
+        </form>
+      </section>
+
+      <!-- Get Cookies Section -->
+      <section id="get-cookies">
+        <h2>Get All Cookies</h2>
+        <button id="getCookiesButton">Get Cookies</button>
+        <pre id="cookiesDisplay"></pre>
+      </section>
+
+      <!-- Clear Cookie Section -->
+      <section id="clear-cookie">
+        <h2>Clear a Cookie</h2>
+        <form id="clearCookieForm">
+          <label for="clearCookieName">Cookie Name</label>
+          <input
+            type="text"
+            id="clearCookieName"
+            placeholder="Enter cookie name to clear"
+            required
+          />
+
+          <button type="submit">Clear Cookie</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="cookies.js"></script>
+  </body>
+</html>
