@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Delete User</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Delete a User</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/create.html">Create User</a></li>
+        <li><a href="/get.html">View Users</a></li>
+        <li><a href="/update.html">Update User</a></li>
+        <li><a href="/cookies.html">Manage Cookies</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="delete-user">
+        <form id="deleteUserForm">
+          <label for="id">User ID</label>
+          <input
+            type="text"
+            id="id"
+            placeholder="Enter User ID to delete"
+            required
+          />
+
+          <button type="submit">Delete User</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="delete.js"></script>
+  </body>
+</html>
